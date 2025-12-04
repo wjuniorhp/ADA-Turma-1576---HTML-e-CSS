@@ -1,0 +1,36 @@
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+h1 {
+    color: #F00;
+    font-size: 24px;
+    font-family: "Knewave", system-ui;
+    font-weight: normal;
+}
+
+h2 {
+    color: #00F;
+    font-size: 18px;
+}
+
+h3 {
+    color: #FFA500;
+    font-size: 16px;
+}
+
+
+ul li {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.destaque {
+    color: green;
+    text-decoration: double underline;
+    font-weight: bold;
+}

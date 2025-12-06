@@ -42,6 +42,32 @@
             </tbody>
         </table>
     </div>
+
+    <form action="https://httpbin.org/post" method="post">
+        <h2>Finalizar Compra</h2>
+        <div class="item-formulario">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" />
+        </div>
+        <div class="item-formulario">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" />
+        </div>
+        <div class="item-formulario">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" />
+        </div>
+        <div class="item-formulario">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" />
+        </div>
+        <div class="item-formulario">
+            <label for="cartao">Número do cartão</label>
+            <input type="number" name="cartao" id="cartao" />
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
     <a class="botao-padrao" href="index.html">Voltar à página inicial</a>
 </body>
 </html>

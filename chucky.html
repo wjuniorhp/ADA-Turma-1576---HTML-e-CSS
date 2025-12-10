@@ -51,21 +51,22 @@
         </div>
         <div class="item-formulario">
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required/>
         </div>
         <div class="item-formulario">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" />
+            <p>Tamanho:</p>
+            <input type="radio" name="opcao" id="tamanho_P" value="P" />
+            <label for="tamanho_P">P</label>
+            <input type="radio" name="opcao" id="tamanho_M" value="M" />
+            <label for="tamanho_M">M</label>
+            <input type="radio" name="opcao" id="tamanho_G" value="G" />
+            <label for="tamanho_G">G</label>
         </div>
         <div class="item-formulario">
-            <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone" />
+            <label for="quantidade">Quantidade</label>
+            <input type="number" name="quantidade" id="quantidade" min="1" value="1" />
         </div>
-        <div class="item-formulario">
-            <label for="cartao">Número do cartão</label>
-            <input type="number" name="cartao" id="cartao" />
-        </div>
-        <button type="submit">Enviar</button>
+        <button type="submit">Comprar Agora</button>
     </form>
 
     <a class="botao-padrao" href="index.html">Voltar à página inicial</a>

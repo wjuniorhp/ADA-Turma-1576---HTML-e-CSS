@@ -33,5 +33,34 @@
         <li>Cowboy</li>
         <li>Chucky</li>
     </ol>
+    <form action="https://httpbin.org/post" method="POST">
+        <h2>Inscreva-se em nossa Newsletter</h2>
+        <div class="item-formulario">
+            <label for="nome">Nome do Tutor</label>
+            <input type="text" name="nome" id="nome" placeholder="Fulano de Tal" />
+        </div>
+        <div class="item-formulario">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="exemplo@email.com"/>
+        </div>
+        <div class="item-formulario">
+            <label for="tipo">Tipo de Pet:</label>
+            <select name="tipo" id="tipo">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="cao">Cão</option>
+                <option value="gato">Gato</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div class="item-formulario">
+            <label for="dataNascimento">Data de nascimento do Pet</label>
+            <input type="date" name="dataNascimento" id="dataNascimento" />
+        </div>
+        <div class="item-formulario">
+            <label for="sugestoes">Caixa de Sugestões</label>
+            <textarea name="sugestoes" id="sugestoes" rows="4" cols="50" placeholder="Deixe aqui suas sugestões para melhorarmos nossos serviços!"></textarea>
+        </div>
+        <button type="submit" class="botao-padrao">Quero Descontos!</button>
+    </form>
 </body>
 </html>

@@ -7,6 +7,16 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Knewave", system-ui;
     font-weight: normal;
@@ -29,13 +39,35 @@ h3 {
     font-size: 16px;
 }
 
-
-ul li {
+ul li,
+ol li {
     margin-bottom: 20px;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #ADD8E6;
+    border-bottom: 2px solid #00008B;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    gap: 20px;
+    padding: 0;
 }
 
 /* Estilos da Homepage */
@@ -61,6 +93,14 @@ a {
     padding-bottom: 5px;
     margin-bottom: 20px;
     font-size: 24px;
+}
+
+#destaques {
+    background-color: #FFFFE0;
+    padding: 15px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .produtos-destaque {
@@ -96,6 +136,14 @@ a {
     margin-top: 15px;
     padding: 10px;
     border-radius: 8px;
+}
+
+#mais-vendidos {
+    background-color: #F0FFF0;
+    padding: 15px;
+    border: 2px solid #32CD32;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 .mais-vendidos li{
@@ -215,4 +263,70 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background-color: orangered;
+}
+
+/* Estilos da Página do Blog */
+.conteudo-pagina {
+    display: flex;
+}
+
+.conteudo-pagina main {
+    flex: 3;
+}
+
+article {
+    margin: 20px 0px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.imagem-blog {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagem-blog img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+details summary > * {
+    display: inline;
+}
+
+details p {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #333;
 }

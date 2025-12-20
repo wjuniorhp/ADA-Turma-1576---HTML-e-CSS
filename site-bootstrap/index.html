@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumiau Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Logo da Aumiau Store" class="logo" width="150"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#destaques">Destaques</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#mais-vendidos">Mais Vendidos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#newsletter">Assine a Newsletter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <div class="corpo container mt-4">
+        <div class="row">
+            <main class="col-lg-8">
+                <h1>Bem Vindos ao site da Aumiau</h1>
+                <p class="lead">Os melhores modelos para os pets estão aqui!</p>
+
+                <section id="destaques" class="my-5">
+                    <h2 class="mb-4">Produtos em Destaque:</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="images/chucky.png" class="card-img-top" alt="Cão e gato usando roupinha do Chucky">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roupinha do Chucky</h5>
+                                    <p class="card-text">Fantasia Chucky - Edição Limitada</p>
+                                    <a href="chucky.html" class="btn btn-primary">Clique aqui para detalhes </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="images/cowboy.webp" class="card-img-top" alt="Dois cães usando roupinha de cowboy">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roupinha de Cowboy</h5>
+                                    <p class="card-text">Fantasia Cowboy - Clássico do Velho Oeste</p>
+                                    <a href="cowboy.html" class="btn btn-primary">Clique aqui para detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="images/dino.png" class="card-img-top" alt="Cão usando roupinha de dinossauro">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roupinha de Dinossauro</h5>
+                                    <p class="card-text">Fantasia Dinossauro - Volta ao Jurássico</p>
+                                    <a href="dino.html" class="btn btn-primary">Clique aqui para detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="newsletter" class="my-5 p-4 bg-white rounded shadow-sm">
+                    <h2 class="mb-4">Assine nossa Newsletter!</h2>
+
+                    <form action="https://httpbin.org/post" method="POST">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome do Tutor:</label>
+                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Fulano de Tal" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" name="email" id="email" required placeholder="seuemail@example.com"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Qual o tipo do seu pet?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipo_pet" id="cao" value="Cão"/>
+                                <label class="form-check-label" for="cao">Cão</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipo_pet" id="gato" value="Gato"/>
+                                <label class="form-check-label" for="gato">Gato</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipo_pet" id="outro" value="Outro"/>
+                                <label class="form-check-label" for="outro">Outro</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nascimento-pet" class="form-label">Data de nascimento do pet:</label>
+                            <input type="date" class="form-control" name="nascimento-pet" id="nascimento-pet" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="sugestao" class="form-label">Sugestão:</label>
+                            <textarea class="form-control" name="sugestao" id="sugestao" rows="3" placeholder="Deixe aqui a sus sugestão para a gente!"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Quero Descontos!</button>
+                    </form>
+                </section>
+            </main>
+            <aside class="col-lg-4">
+                <div class="p-3 bg-white rounded shadow-sm">
+                    <section id="mais-vendidos">
+                        <h2 class="h4">Produtos mais vendidos:</h2>
+                        <ol class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="images/dino.png" alt="Roupinha do Dinossauro" width="50" class="me-2 rounded"/> Dinossauro
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="images/cowboy.webp" alt="Roupinha do Cowboy" width="50" class="me-2 rounded"/> Cowboy
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="images/chucky.png" alt="Roupinha do Chucky" width="50" class="me-2 rounded"/> Chucky
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <section id="galeria" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Clientes felizes</h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img src="images/rex.jpg" alt="Cachorro Rex usando óculos escuros" class="img-fluid rounded shadow-sm"/>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img src="images/mia.jpg" alt="Gata Mia com laço rosa" class="img-fluid rounded shadow-sm"/>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img src="images/buddy.jpg" alt="Cachorro Buddy brincando no parque" class="img-fluid rounded shadow-sm"/>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img src="images/whiskers.jpg" alt="Gato Whiskers deitado no sofá" class="img-fluid rounded shadow-sm"/>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img src="images/max.jpg" alt="Cachorro Max com roupinha colorida" class="img-fluid rounded shadow-sm"/>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img src="images/luna.avif" alt="Gata Luna brincando com novelo de lã" class="img-fluid rounded shadow-sm"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center text-white py-3">
+        <p class="mb-0">&copy; 2025 Aumiau Store. Todos os direitos reservados.</p>
+        <p class="mb-1">Desenvolvido na aula de front-end.</p>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

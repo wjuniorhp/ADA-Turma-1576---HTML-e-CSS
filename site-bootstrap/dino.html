@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinossauro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="titulo-principal">Roupinha do Dinossauro</h1>
+    <p class="slogan">Transforme seu pet em um dinossauro adorável com nossa roupinha temática!</p>
+    
+</body>
+<body class="bg-dark-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Logo da Aumiau Store" class="logo" width="150"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#destaques">Destaques</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#mais-vendidos">Mais Vendidos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#newsletter">Assine a Newsletter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container m-5">
+            <h1 class="titulo-principal">Roupinha do Dinossauro</h1>
+            <p class="slogan">Transforme seu pet em um dinossauro adorável com nossa roupinha temática!</p>
+            <div class="detalhes-produto row">
+                <div class="col-md-6">
+                    <img src="images/dino.png" alt="Roupinha do Dinossauro" class="img-fluid"/>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Produto</th>
+                                <th colspan="2">Detalhes</th>
+                            </tr>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Serve em</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Roupas</td>
+                                <td>P</td>
+                                <td>Até 5kg</td>
+                            </tr>
+                            <tr>
+                                <td>Roupas</td>
+                                <td>M</td>
+                                <td>De 5kg a 10kg</td>
+                            </tr>
+                            <tr>
+                                <td>Roupas</td>
+                                <td>G</td>
+                                <td>De 10kg a 18kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <section id="finalizar-compra" class="m-5 p-4 bg-white rounded shadow-sm">
+            <form action="https://httpbin.org/post" method="post">
+                <h2>Finalizar Compra</h2>
+                <div class="item-formulario mb-3">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="form-control" />
+                </div>
+                <div class="item-formulario mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" name="email" id="email" required class="form-control"/>
+                </div>
+                <div class="item-formulario mb-3">
+                    <p>Tamanho:</p>
+                    <div class="form-check">
+                        <input type="radio" name="opcao" id="tamanho_P" class="form-check-input" value="P" />
+                        <label for="tamanho_P" class="form-check-label">P</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="opcao" id="tamanho_M" class="form-check-input" value="M" />
+                        <label for="tamanho_M" class="form-check-label">M</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="opcao" id="tamanho_G" class="form-check-input" value="G" />
+                        <label for="tamanho_G" class="form-check-label">G</label>
+                    </div>
+                </div>
+                <div class="item-formulario mb-3">
+                    <label for="quantidade" class="form-label">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" class="form-control" min="1" value="1" />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Comprar Agora</button>
+            </form>
+            
+        </section>
+        <a class="botao-padrao btn btn-primary" href="index.html">Voltar à página inicial</a>
+    </main>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
